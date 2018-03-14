@@ -52,8 +52,7 @@ namespace WpfApp1
                     string s = boks1.Text;
                 
                     String pattern = @"(\d+)([-+*/])(\d+)";
-            Console.WriteLine(pattern.Length);
-                    foreach (Match m in Regex.Matches(s, pattern))
+                       foreach (Match m in Regex.Matches(s, pattern))
                     {
                         int value1 = Int32.Parse(m.Groups[1].Value);
                         int value2 = Int32.Parse(m.Groups[3].Value);
